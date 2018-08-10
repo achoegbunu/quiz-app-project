@@ -13,21 +13,43 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<h1>Multiple Choice Question Quiz</h1>
-		<button type="button" class="btn btn-primary" onclick="checkAnswer()">Start Game</button>
-		<!-- <div class="container"></div>
+		<div class="container">
+		<h1 class="title">Multiple Choice Question Quiz</h1>
 			<div class="row"></div>
 			<div class=".col-sm-4"></div>
 			<form id="questionForm"></form>
 			<h2>Quiz Questions</h2>
-			<div class="formGroup" id="question0">who is the best basketball player?</div>
-			<div class="formGroup" id="question1">what is the best search engine?</div>
-			<div class="formGroup" id="question2">least favorite day of the week?</div>
-			<div class="formGroup" id="question3">to err is human to forgive is?</div>
-			<div class="formGroup" id="question4">codify will teach you how to?</div>
-			<div class="formGroup" id="question5">what is the number one sports in the world?</div>
-			<input type="text">
-			<button type="button" onclick="quizAnswer()">answer here</button> -->
+			<div class="formGroup">
+			    <div id="question0"></div>
+				<input id="answer0" type="text" class="form-control">
+			</div>
+			<div class="formGroup">
+			<div id="question1"></div>
+				<input id="answer1" type="text" class="form-control">
+			</div>
+			<div class="formGroup">
+				<div id="question2"></div>
+				<input id="answer2" type="text" class="form-control">
+			</div>
+			<div class="formGroup">
+				<div id="question3"></div>
+				<input id="answer3" type="text" class="form-control" ="">
+			</div>
+			<div class="formGroup">
+				<div id="question4"></div>
+				<input id="answer4" type="text" class="form-control">
+			</div>
+			<br>
+			<!-- submit button -->
+			<button type="button" onclick="checkAnswer()" class="btn btn-primary btn-lg">see results</button>
+			</form>
+			<!-- display correct and incorrect totals -->
+			<div class="col-sm-2 col-sm-offset-1">
+				<h1 class="correct">Correct: <span id="correct"></span></h1>
+				<h1 class="incorrect">Incorrect:  <span id="incorrect"></span></h1>
+			</div>
+		</div>
+	</div>
 		
 
 		<!-- jquery library -->
